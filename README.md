@@ -1,5 +1,4 @@
 # COVID-19 Dataset Exploration and Preparation for In-Depth Analysis and Visualization
-
 In the world of data analysis, understanding and preparing your dataset are fundamental steps. Let's dive into the process of Exploratory Data Preparation (EDP) for the COVID-19 dataset using SQL. We will explain the reasons behind various SQL operations performed on the dataset.
 
 1. Data Exploration
