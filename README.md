@@ -1,39 +1,51 @@
-# COVID-19 Dataset Exploration and Preparation for In-Depth Analysis and Visualization
-In the world of data analysis, understanding and preparing your dataset are fundamental steps. Let's dive into the process of Exploratory Data Preparation (EDP) for the COVID-19 dataset using SQL. We will explain the reasons behind various SQL operations performed on the dataset.
+# COVID-19 Data Exploration using SQL
 
-1. Data Exploration
-The initial part of the code includes basic data exploration steps, such as viewing the dataset, sorting it by relevant columns, and extracting specific columns for analysis.
+This repository contains a collection of SQL queries used to explore and analyze COVID-19 data. The queries cover a range of data manipulation, calculations, and visualizations, with the goal of gaining insights into the pandemic's impact on different regions and the progress of vaccination efforts.
 
-2. Likelihood of Dying in Nigeria
+## Table of Contents
 
-Reason: This code calculates the percentage of COVID-19 cases resulting in death in Nigeria. Understanding this statistic is crucial for assessing the severity of the disease in a specific location.
+- [Overview](#overview)
+- [Data Sources](#data-sources)
+- [Queries](#queries)
+- [Data Preprocessing](#data-preprocessing)
+- [Visualizations](#visualizations)
+- [Contributing](#contributing)
+- [License](#license)
 
-3. Percentage of Population Infected in Nigeria
+## Overview
 
-Reason: This code calculates the percentage of the population that contracted COVID-19 in Nigeria. It provides insights into the virus's spread relative to the population size.
+The SQL queries provided in this repository are designed to work with COVID-19 data from various sources. They utilize SQL features such as joins, CTEs (Common Table Expressions), temp tables, and window functions to perform data exploration and analysis. The queries cover topics such as infection rates, vaccination progress, and population insights.
 
-4. Countries with the Highest Infection Rates Compared to Population
+## Data Sources
 
-Reason: This code identifies and ranks countries with the highest infection rates relative to their population size. This information can help identify areas with a more severe impact of COVID-19.
+The data used in these queries is sourced from the `ProjectPortfolio` database. Two main tables are utilized:
 
-5. Countries with the Highest Death Count per Population
+- `CovidDeaths`: This table contains information on COVID-19 cases and deaths by location and date.
+- `CovidVaccinations`: This table provides data on COVID-19 vaccinations by location and date.
 
-Reason: This code identifies and ranks countries with the highest COVID-19 death counts relative to their population. It provides insights into the impact of the virus on different countries.
+## Queries
 
-6. Continents with Death Counts per Population
+The queries are categorized into different sections, each with a specific focus. Here's a summary of the sections:
 
-Reason: This code groups data by continent and calculates the death counts relative to the population for each continent. It helps understand how different continents are affected by COVID-19.
+- **Data Exploration**: Initial queries to display and sort COVID-19 data.
+- **Infection Analysis**: Queries to calculate and analyze infection rates, likelihood of death, and population impact.
+- **Continent Analysis**: Queries to explore data at the continent level, including death counts per population.
+- **Global Analysis**: Queries for global statistics and trends.
+- **Vaccination Analysis**: Queries related to vaccination data, including rolling vaccination statistics.
 
-7. Global COVID-19 Numbers
+## Data Preprocessing
 
-Reason: This code calculates and displays global COVID-19 statistics, including total cases, total deaths, and the death percentage over time. It provides a global perspective on the pandemic.
+Data preprocessing is an essential step in these queries. It involves handling missing values, converting data types, and creating views for visualization. The preprocessing ensures that the data is ready for analysis and reporting.
 
-8. Joining COVID-19 Deaths and Vaccinations Data
+## Visualizations
 
-Reason: This code combines COVID-19 deaths and vaccination data, enabling comprehensive analysis of the impact of vaccinations on the pandemic's progression.
+To support data visualization, this repository includes SQL queries for creating views. The views store calculated metrics, such as the percentage of the population vaccinated. You can use these views to build charts and graphs using your preferred data visualization tools.
 
-9. Visualizing Vaccination Data
+## Contributing
 
-Reason: This code creates a view to store vaccination data, making it easier to visualize and analyze vaccination trends and their impact on the population.
+Contributions are welcome! If you have additional SQL queries, improvements, or suggestions for data visualization, please feel free to open an issue or create a pull request. Your contributions can help enhance the COVID-19 data exploration process.
 
-With these data exploration and preparation steps, the COVID-19 dataset is now ready for in-depth analysis and visualization. Clean and structured data is essential for extracting valuable insights and understanding the dynamics of the pandemic.
+Feel free to explore the SQL queries and adapt them to your own data exploration needs. If you have any questions or need assistance, please don't hesitate to reach out.
+
+Stay safe and informed!
+
